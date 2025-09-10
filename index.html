@@ -21,64 +21,140 @@
     <body>
         <header class="py-4">
             <div class="container flex justify-between items-center">
-                <img src="/image/logo.png" alt="Logo" width="124" height="49" />
-                <a href="#" class="btn btn-gold-50">Kontakt</a>
+                <img src="/image/logo.png" alt="Logo" width="121" height="48" />
+                <a href="#kontakt" class="btn btn-gold-50">Kontakt</a>
             </div>
         </header>
         <main>
-            <section class="section-padding-y" aria-label="Úvodní sekce">
-                <img src="" alt="" />
-                <div class="flex flex-col items-center container-typo">
-                    <h1 class="text-h1 mb-8 text-center">Nabízíme rekonstrukce fasád, restaurování fasád a štukaterské práce</h1>
-                    <p class="text-p text-center">
+            <section
+                class="section-padding-y relative container-hero before:z-1 before:absolute before:inset-0 before:size-full before:bg-gradient-to-t before:from-brown-200 before:to-brown-100 before:opacity-75"
+                aria-label="Úvodní sekce"
+            >
+                <img class="absolute inset-0 size-full object-cover object-top" src="/image/hero.webp" alt="" />
+                <div class="flex flex-col h-full justify-center items-center z-10 container-typo relative">
+                    <h1 class="text-h1 text-white mb-8 text-center">Nabízíme rekonstrukce fasád, restaurování fasád a štukaterské práce</h1>
+                    <p class="text-center text-white">
                         Nabízíme štukatérské a stavebně řemeslné práce. Provádíme restaurování a rekonstrukce zdobených fasád. Realizujeme repliky
                         architektonických prvků či doplňky včetně portálů, balustrád, sloupů i váz.
                     </p>
                 </div>
             </section>
             <section class="section-padding-y" aria-label="Naše práce">
-                <div class="container">
-                    <h2 class="text-h2 mb-6 text-center">Naše práce</h2>
-                    <p class="text-center mb-8 text-p">Naše zameření balancuje na hranici mezi řemeslem a uměním.</p>
-                    <div>
-                        <article>
-                            <div>
-                                <img src="" alt="" width="" height="" loading="lazy" />
-                                <img src="" alt="" width="" height="" loading="lazy" />
-                                <div>
-                                    <div>
-                                        <span>před</span>
-                                        <span>potom</span>
-                                    </div>
-                                    <img src="" alt="" height="" width="" loading="lazy" />
+                <div class="container-typo">
+                    <h2 class="text-h2 text-center mb-6">Naše práce</h2>
+                    <p class="text-center mb-8">Naše zameření balancuje na hranici mezi řemeslem a uměním.</p>
+                    <div class="grid grid-cols-1 gap-8">
+                        <div class="item-transformation">
+                            <h3>Opravíme Vám fasádu</h3>
+                            <div class="item-transformation-grid">
+                                <div class="item-transformation-img-container">
+                                    <img src="/image/opravime-vam-fasadu-pred.webp" alt="" loading="lazy" />
+                                    <span>před</span>
+                                </div>
+                                <div class="item-transformation-img-container">
+                                    <img src="/image/opravime-vam-fasadu-potom.webp" alt="" loading="lazy" />
+                                    <span>potom</span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="px-6 py-8 lg:px-8 bg-gray-50 rounded-sm">
+                            <h3 class="text-h3 mb-6 text-center">Vyzdobíme Vám fasádu</h3>
+                            <div class="item-transformation-grid">
+                                <div class="item-transformation-img-container">
+                                    <img src="/image/vyzdobime-vam-fasadu-pred.webp" alt="" loading="lazy" />
+                                    <span>před</span>
+                                </div>
+                                <div class="item-transformation-img-container">
+                                    <img src="/image/vyzdobime-vam-fasadu-potom.webp" alt="" loading="lazy" />
+                                    <span>potom</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6 py-8 lg:px-8 bg-gray-50 rounded-sm">
+                            <h3 class="text-h3 mb-6 text-center">Zvládneme i baroko</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="item-transformation-img-container">
+                                    <img src="/image/zvladneme-i-baroko-pred.jpg" alt="" loading="lazy" />
+                                    <span>před</span>
+                                </div>
+                                <div class="item-transformation-img-container">
+                                    <img src="/image/hero.webp" alt="" loading="lazy" />
+                                    <span>potom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-gray-50 section-padding-y" aria-label="Fotogalerie">
+                <div class="container">
+                    <h2 class="text-h2 text-center mb-8">Fotogalerie</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <article class="item-gallery">
+                            <a
+                                id="item-gallery"
+                                role="button"
+                                href="#"
+                                title="Otevřít fotogalerii: ..."
+                                data-source="/data/gallery/1.json"
+                                class="group block"
+                            >
+                                <div class="item-gallery-img-container">
+                                    <img src="/image/opravime-vam-fasadu-potom.webp" alt="" width="" height="" loading="lazy" />
+                                    <img src="/image/icon/cursor-click.svg" alt="Cursor click" width="24" height="24" loading="lazy" />
+                                </div>
+                                <div class="item-gallery-content">
+                                    <h3>Opravíme Vám fasádu</h3>
+                                </div>
+                            </a>
                         </article>
                     </div>
                 </div>
             </section>
-            <section class="bg-brown-50 section-padding-y" aria-label="Fotogalerie">
+            <script src="/js/fslightbox.min.js" defer></script>
+            <script src="/js/ajax-gallery.js" defer></script>
+
+            <section id="kontakt" class="section-padding-y" aria-label="Kontakt">
                 <div class="container">
-                    <h2 class="text-h2 mb-8 text-center">Fotogalerie</h2>
-                    <div>
-                        <article></article>
-                    </div>
-                </div>
-            </section>
-            <section class="section-padding-y" aria-label="Kontakt">
-                <div class="container">
-                    <h2 class="text-h2 mb-8 text-center">Ozvěte se nám</h2>
-                    <div>
-                        <ul>
-                            <li></li>
+                    <h2 class="text-h2 text-center mb-8">Ozvěte se nám</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <ul class="flex flex-col gap-6">
+                            <li class="bg-gray-50 rounded-sm p-6">
+                                <h3 class="text-h3 mb-4">Telefon</h3>
+                                <div class="flex items-center gap-2">
+                                    <img src="/image/icon/phone.svg" alt="" width="24" height="24" loading="lazy" />
+                                    <span>+420 376 315 955</span>
+                                </div>
+                            </li>
+                            <li class="bg-gray-50 rounded-sm p-6">
+                                <h3 class="text-h3 mb-4">E-mail</h3>
+                                <div class="flex items-center gap-2">
+                                    <img src="/image/icon/mail.svg" alt="" width="24" height="24" loading="lazy" />
+                                    <a href="mailto:stukoars@seznam.cz" class="hover:underline">stukoars@seznam.cz</a>
+                                </div>
+                            </li>
+                            <li class="bg-gray-50 rounded-sm p-6">
+                                <h3 class="text-h3 mb-4">Adresa</h3>
+                                <div class="flex items-center gap-2">
+                                    <img src="/image/icon/home.svg" alt="" width="24" height="24" loading="lazy" />
+                                    <span>Niederleho 75, 339 01 Klatovy III</span>
+                                </div>
+                            </li>
                         </ul>
+                        <iframe
+                            class="rounded-sm w-full h-full min-h-80"
+                            src="https://mapy.com/s/rabulobagu"
+                            width="523"
+                            height="382"
+                            frameborder="0"
+                        ></iframe>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="bg-brown-200 py-8">
             <div class="container">
-                <p class="text-white text-center text-p">Copyright &copy; 2025 stukoars.cz</p>
+                <p class="text-white text-center">Copyright &copy; 2025 stukoars.cz</p>
             </div>
         </footer>
     </body>
