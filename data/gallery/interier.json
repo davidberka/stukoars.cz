@@ -1,15 +1,15 @@
 [
-    "/image/gallery/interier/1.jpg",
-    "/image/gallery/interier/2.jpg",
-    "/image/gallery/interier/3.jpg",
-    "/image/gallery/interier/4.jpg",
-    "/image/gallery/interier/5.jpg",
-    "/image/gallery/interier/6.jpg",
-    "/image/gallery/interier/7.jpg",
-    "/image/gallery/interier/8.jpg",
-    "/image/gallery/interier/9.jpg",
-    "/image/gallery/interier/10.jpg",
-    "/image/gallery/interier/11.jpg",
-    "/image/gallery/interier/12.jpg",
-    "/image/gallery/interier/13.jpg"
+    "./image/gallery/interier/1.jpg",
+    "./image/gallery/interier/2.jpg",
+    "./image/gallery/interier/3.jpg",
+    "./image/gallery/interier/4.jpg",
+    "./image/gallery/interier/5.jpg",
+    "./image/gallery/interier/6.jpg",
+    "./image/gallery/interier/7.jpg",
+    "./image/gallery/interier/8.jpg",
+    "./image/gallery/interier/9.jpg",
+    "./image/gallery/interier/10.jpg",
+    "./image/gallery/interier/11.jpg",
+    "./image/gallery/interier/12.jpg",
+    "./image/gallery/interier/13.jpg"
 ]
