@@ -32,8 +32,8 @@
 
     --header-height-mobile: 4.375rem;
     --header-height-desktop: 5rem;
-    --hero-section-height-mobile: min(calc(100dvh - var(--header-height-mobile)), 900px);
-    --hero-section-height-desktop: min(calc(100dvh - var(--header-height-desktop)), 900px);
+    --hero-section-height-mobile: min(calc(100svh - var(--header-height-mobile)), 900px);
+    --hero-section-height-desktop: min(calc(100svh - var(--header-height-desktop)), 900px);
 }
 
 @layer base {
