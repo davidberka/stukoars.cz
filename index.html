@@ -6,6 +6,14 @@
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.stukoars.cz/" />
         <meta name="description" content="ŠTUKO ARS s. r. o. - fasády a štukaterské práce s tradicí" />
+        <meta name="author" content="David Berka">
+
+        <meta property="og:title" content="Fasády a štukaterské práce s tradicí">
+        <meta property="og:description" content="ŠTUKO ARS s. r. o. - fasády a štukaterské práce s tradicí">
+        <meta property="og:image" content="https://www.stukoars.cz/image/hero.webp">
+        <meta property="og:url" content="https://www.stukoars.cz/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Fasády a štukatérské práce s tradicí | ŠTUKO ARS s. r. o.">
 
         <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
@@ -204,7 +212,7 @@
         </main>
         <footer class="bg-brown-200 py-8">
             <div class="container flex justify-between flex-wrap items-center gap-4">
-                <p class="text-white text-center">Copyright &copy; 2025 stukoars.cz</p>
+                <p class="text-white text-center">Copyright &copy; <span id="footer-year"></span> stukoars.cz</p>
                 <a
                     class="hover:underline text-white"
                     href="javascript:parent.postMessage('cc-settings', '*');"
@@ -217,7 +225,7 @@
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBSDG1BPB6"></script>
-        <script>
+        <script type="text/plain" data-category="analytics">
             window.dataLayer = window.dataLayer || [];
             function gtag() {
                 dataLayer.push(arguments);
@@ -225,6 +233,11 @@
             gtag('js', new Date());
 
             gtag('config', 'G-TBSDG1BPB6');
+        </script>
+
+        <script>
+            const footerYear = document.querySelector('#footer-year');
+            footerYear.textContent = new Date().getFullYear();
         </script>
     </body>
 </html>
